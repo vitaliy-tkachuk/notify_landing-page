@@ -11,10 +11,12 @@
 
 body
 	font-size: 16px
+	letter-spacing: 1px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
 	font-family: $default-font
+	font-weight: 400
 	overflow-x: hidden
 	color: $text
 	input, textarea
@@ -24,19 +26,212 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+	&.ishome
+		.site-header
+			min-height: 600px
+			background-color: #000
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
-		width: 100%
+a
+	color: $text
+	&:hover
+				color: $accent
+				font-weight: 400
+				text-decoration: none
+			
 
-.text-center
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+	background-color: #fff
 	text-align: center
 
-b, strong
-	font-weight: bold
+section
+	padding: 55px 0
+	margin: 0
+
+.h3,.h4
+	font-family: raleway, sans-serif
+	font-weight: 600
+	color: #222
+
+.h3
+	font-size: 22px
+.h4
+	font-size: 18px
+
+
+
+
+
+
+.header-flex
+	display: flex
+	height: 100%
+	position: relative
+
+.flex-center
+	margin: auto
+
+.header-composition
+	top: 150px
+	text-align: left
+	position: relative
+	h1.logo
+		font-family: pacifico, sans-serif
+		font-size: 60px
+		font-weight: normal
+		color: #fff
+		span
+			color: $accent
+	p.header-description
+		font-family: helvetica-neue, sans-serif
+		font-weight: 500
+		margin-top: 40px
+		font-size: 24px
+		color: #fff
+
+.round
+	&-os, &-social
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+		li
+			display: inline-block
+			margin-right: 12px
+		a
+			display: block
+			text-align: center
+			border-radius: 10em
+			transition: background-color .25s ease
+			&:hover
+				background-color: rgba($accent, .6)
+	&-os
+		a 
+			color: #decfb5 
+			font-size: 24px
+			background-color: rgba(#000, .4)
+			height: 52px
+			width: 52px
+			line-height: 52px
+	&-social
+		a 
+			color: #fff
+			background-color: #d4d4d4
+			height: 32px
+			width: 32px
+			line-height: 32px
+
+			
+
+
+.features-composition
+	display: inline-block	
+	max-width: 320px
+	padding: 0
+	margin: 0 70px 0 0
+	i
+		height: 100px
+		width: 100px
+		background-color: $accent
+		border-radius: 10em
+		color: #fff
+		font-size: 54px
+		line-height: 100px
+		margin-bottom: 22px
+
+.s-get-notified
+	text-align: left
+	background-color: #e3e3e3
+	p
+		padding-top: 25px
+	.h-iframe        
+		position: relative
+		padding-top: 57%
+		iframe
+			position: absolute
+			top: 0 
+			left: 0
+			width: 100%
+			height: 100%	
+			border-radius: 25px
+
+.get-notified-form
+	input
+		border: none
+		border-radius: 10px 0 0 10px
+		padding: 20px 45px 17px 25px
+		margin: 0
+		font-size: 18px
+	.button-notify
+		border: none
+		border-radius: 0 10px 10px 0
+		color: #fff
+		background-color: $accent
+		margin: 0
+		padding: 15px 40px
+		font-family: raleway
+		font-weight: 800
+		font-size: 22px
+		transition: background-color .1s ease
+		cursor: pointer
+		&:hover
+			background-color: darken($accent, 2%)
+
+
+.s-reviews
+	.owl-carousel
+		p
+			font-size: 16px
+			font-family: $default-font
+			font-weight: 400
+			font-style: italic
+			
+	.owl-dots
+		width: 100%
+		padding: 0
+		text-align: center
+		margin-top: 25px
+		.owl-dot
+			width: 50px
+			height: 50px
+			background-color: #000
+			display: inline-block
+			margin: 5px
+				transition: background-color .5s ease, transform .5s ease 	
+			img
+				transition: opacity .5s ease, transform .5s ease
+				cursor: pointer
+			&.active
+				background-color: $accent
+				transform: scale(1.3)
+				img
+					opacity: .6
+.s-social
+	padding: 0 0
+	margin: 0
+
+.round-social
+	li
+		margin: 5px
+
+	
+
+footer
+	text-align: center
+	background-color: #e3e3e3
+	padding: 45px 0
+	margin: 45px 0 0 0
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+	li
+		display: inline-block
+		margin-right: 12px	
+
+
 
 
 

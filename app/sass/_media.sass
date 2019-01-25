@@ -5,15 +5,47 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
-// ≥992px
+	.features-composition
+		max-width: 300px
+		margin: 0 25px 0 0
+	
+	// ≥992px
 +media-breakpoint-down(md)
+	.features-composition
+		display: block
+		margin: 0 auto
+	.h-iframe
+		margin: 25px 0
+	.get-notified-form
+		text-align: center
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.get-notified-form
+		text-align: center
+		.button-notify
+			padding: 18px 20px
+			font-size: 18px
+
 
 // ≥576px
 +media-breakpoint-down(xs)
+	header
+		background: url("../img/header-small.png") !important
+	.get-notified-form
+		input
+			padding: 10px 35px 7px 25px
+			font-size: 16px
+		.button-notify
+			padding: 7px 10px
+			font-size: 18px
+	
+@media (max-width: 331px)
+	.get-notified-form
+		input
+			padding: 10px 35px 7px 10px
+			font-size: 16px
+
 
 
 /*==========  Mobile First  ==========*/
